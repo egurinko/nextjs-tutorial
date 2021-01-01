@@ -34,7 +34,7 @@ const Layout = ({ children, home }) => {
                     <Link href="/">
                     <a>
                         <img
-                            src="/images/profile.jpg"
+                            src="/images/profile.png"
                             className={`${styles.headerImage} ${utilStyles.borderCircle}`}
                             alt={name}
                         />
