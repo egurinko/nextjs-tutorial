@@ -6,7 +6,12 @@ import Link from "next/link"
 const name = "Toru Eguchi"
 export const siteTitle = "Nextjs Sample title"
 
-const Layout = ({ children, home }) => {
+type LayoutProps = { 
+    children: React.ReactNode;
+    home?: boolean;    
+}
+
+const Layout = ({ children, home }: LayoutProps) => {
     return (
         <div className={styles.container}>
             <Head>
